@@ -5,9 +5,10 @@
 
 Welcome to the **Pet Adoption Platform**! This project was developed using **Laravel**, a powerful PHP framework, to handle the backend functionalities. The platform aims to facilitate the adoption of pets by providing users with an intuitive interface to browse pets, submit adoption requests, and complete the payment process. The backend uses **Laravel** to manage user authentication, adoption requests, and admin controls.
 
-In this README, we’ll discuss the features of the platform and the technical implementation using Laravel.
+In this README, we’ll discuss the features of the platform and the technical implementation using Laravel & here you can watch the project video.
 
----
+https://drive.google.com/file/d/10qbAqn9baqFhY1SvMu4hfNZoi7hf9pKz/view?usp=drive_link
+
 
 ## Features
 
