@@ -1,0 +1,123 @@
+:root {
+    --background:rgb(27, 27, 139);
+    --blue:rgb(24, 111, 117);
+    --skin:#c1b086;
+    --light:#5f5f5f;
+    --shadow: 0 10px 20px rgba(2,60,90,0.1);
+    --skin:#f0e1ba81;
+
+}
+
+.handle-title{
+    margin-top: -4.5rem;
+    margin-bottom:12px;
+}
+
+.categoryCard{
+    position: relative;
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+
+
+
+.categoryCard img{
+    width: 100%;
+    display: block;
+    height:290px;
+    border-radius: 6px;
+}
+
+.category-data{
+    width: 80%;
+    background: #fff;
+    box-shadow: var(--shadow);
+    border-radius: 6px;
+    padding: 20px 8px 12px 12px;
+    border: 1px solid #c1b08665;
+    position: absolute;
+    bottom: -36px;
+    left:16px;  right:0;
+    margin: 0 auto;
+    z-index: 110 !important;
+    
+}
+
+.category-data h2{
+    font-size: 1.8rem;
+    color: var(--background);
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.category-data p{
+    font-size: 14px;
+    padding-top: 5px;
+    font-weight: 400;
+    color: var(--light);
+}
+.pet-name{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.category-icon{
+    font-size: 25px !important;
+    color: var(--blue);
+
+
+}
+
+.slick-slide {
+    margin-right: 0; 
+    margin-bottom: 60px;
+    width: 25%; 
+    padding: 0 10px; 
+}
+
+  
+/* .caption{
+    position: absolute;
+    top: 0; left: 0; 
+    bottom: 0; right: 0;
+    border-radius: 10px;
+    background: rgba(0, 15, 152,0.3);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    opacity: 0;
+    transition: .4s;
+    padding-top: 60%;
+   
+}
+
+.caption img{
+    width: 120px;
+    height: 120px;
+    margin-bottom: 5px;
+   
+}
+
+.caption p{
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.category:hover .caption{
+    opacity: 1;
+    padding-top: 0;
+} */
+
+
+@media screen and (max-width:380px){
+    .handle-title{
+        margin-top: -3rem;
+        margin-bottom:8px;
+    }
+    
+}

@@ -1,0 +1,117 @@
+.main-trackpart {
+    margin: 11rem auto 3rem auto !important;
+    width: 80%;
+    max-width: 95%;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1) !important; */
+    background-color: #fff;
+    padding: 3.6rem 2.2rem 4rem 2.2rem !important;
+}
+
+.track-parent {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.TrackForm {
+    width: 100%;
+}
+
+.track-left,
+.track-right {
+    width: 50%;
+}
+
+.track-right img {
+    width: 100%;
+}
+
+.main-trackpart h2.track-heading {
+    font-size: 3rem;
+    font-weight: 600;
+    color: #333;
+    margin: 1rem 0 3.4rem 0;
+    text-align: center;
+}
+
+.TrackForm .track-fields {
+    display: block;
+}
+
+.TrackForm input {
+
+    font-size: 14px;
+    width: 100%;
+    height: unset;
+    padding: 15px 10px;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 2rem;
+    border: 1px solid #d2d6dc;
+    background-color: #fff;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .05);
+
+
+}
+
+.TrackForm .track-btn {
+    padding: 10px;
+    background: rgba(23, 162, 167, 0.719);
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 18px;
+    margin-bottom: 12px;
+    border-radius: 5px;
+    font-size: 18px;
+    color: #fff;
+    transition: .5s ease;
+
+}
+
+.TrackForm .track-btn:hover {
+    border-radius: 0;
+    background: rgba(10, 130, 134, 0.877);
+}
+
+
+@media screen and (max-width:768px) {
+    .main-trackpart {
+        margin: 3rem 1rem;
+        width: 90%;
+        background-color: #fff;
+        padding: 4rem 2.2rem !important;
+
+    }
+
+    .track-left,
+    .track-right {
+        width: 100%;
+    }
+
+
+    .track-parent {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+}
+
+@media screen and (max-width:320px) {
+    .main-trackpart {
+        margin: 3rem 1rem;
+        width: 95%;
+        padding: 3rem 1.2rem !important;
+
+    }
+    .track-right {
+        display:none;
+    }
+    .main-trackpart h2.track-heading {
+        font-size: 1.6rem;
+      
+    }
+
+
+}

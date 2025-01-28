@@ -1,0 +1,15 @@
+.breadcrum{
+    margin-bottom: 16px;
+    color: #58585870;
+    display: flex;
+    align-items: center;
+}
+.breadcrum span{
+    font-size: 1.6rem;
+    font-weight: 400;
+    margin:0 4px;
+}
+.bread-icon{
+    font-size: 1rem !important;
+
+}

@@ -1,0 +1,101 @@
+:root {
+    --darkbg: rgb(12, 12, 73);
+    --lightParah: rgba(9, 9, 46, 0.637);
+    --pro-blue: rgb(20, 20, 97);
+    --skyCol: rgb(4, 160, 165);
+    --shadow: 2px 2px 12px rgba(0, 0, 0, 0.15);
+
+}
+
+.process-area {
+    background-color: #f5fcfa;
+    margin-top:6%;
+    margin-bottom: -90px;
+    z-index: 99;
+}
+
+.process-row {
+    padding: 30px 50px;
+    display: flex; 
+    flex-wrap: wrap;
+}
+
+.process-area .single-process h4 {
+    margin: 16px 0;
+
+}
+
+.process-area .title h1 {
+    color: var(--pro-blue);
+    font-size: 3rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.process-area .title p {
+    color: var(--lightParah);
+    font-size: 1.4rem;
+    text-transform: capitalize;
+    font-weight: 400;
+}
+.process-row .single-process{
+    margin:0 8% 0 12%;
+}
+
+.single-process.process2::before{
+    content: "";
+    background: url('../../Images/arrow.png') center center / 100% no-repeat local;
+    width: 80px;
+    height: 30px;
+    position: absolute;
+    left: -65px;
+    top: 19%;
+}
+
+.process-row .single-process .process-icon {
+    font-size: 2.4rem !important;
+    color: var(--darkbg);
+    transition: all .5s ease;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.process-row .single-process .process-icon.last-icon {
+    font-size: 2.6rem !important;
+}
+
+.process-row .single-process .process-icon:hover {
+    color: var(--skyCol);
+}
+
+.process-row .single-process h4 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--pro-blue);
+}
+
+.process-row .single-process p {
+    text-wrap: wrap;
+    font-weight: 400;
+    color: var(--lightParah);
+    font-size: 1.5rem;
+}
+
+@media screen and (max-width:1080px){
+    .process-row {
+        padding: 30px 80px;
+    }
+    .process-row .single-process{
+        margin:0 8% 0 0;
+    }
+    .single-process.process2::before{
+        display: none;
+    }
+}
+
+@media screen and (max-width:650px){
+    .process-row {
+        padding: 30px 50px;
+    }
+    
+}

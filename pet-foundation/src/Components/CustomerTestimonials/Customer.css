@@ -1,0 +1,125 @@
+:root {
+    --background1: rgba(11, 11, 53, 0.911);
+    --blue1: rgb(26, 132, 139) !important;
+    --skin1: #b6a374;
+    --light: #5f5f5fda;
+    --light1: #5f5f5fd5;
+
+    --shadow: 0 10px 20px rgba(2, 60, 90, 0.1);
+    --skin: #f0e1ba81;
+
+}
+
+.slick-slide {
+    margin-right: 0;
+    margin-bottom: 20px;
+    width: 25%;
+    
+}
+
+
+.Customer-card {
+    cursor: pointer;
+    background-color: #fff;
+    border-radius: 8px !important;
+    box-shadow: var(--shadow);
+    border: 1px solid var(--skin);
+    transition: .5s ease;
+    margin-bottom: 26px;
+   padding-bottom:15px;
+   position: relative;
+}
+
+.quote-part{
+    border-radius: 0% 100% 100% 0% / 30% 0% 100% 70%;
+    /* background-color: #bbbbbbb7; */
+    background-color: #d5ebecec;
+
+    width: 28%;
+    height: 90px;
+
+}
+
+.quote-part .quote-icon{
+    color: #fff;
+    font-size: 2rem;
+   position: absolute;
+   top: 28px;
+   left: 22px;  
+}
+
+.Customer-card:hover {
+    border: 1px solid #b9d2d3;
+
+
+}
+.Customer-card .img-testi{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.Customer-card img {
+    width: 106px;
+    height: 106px;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 1px inset var(--background1);
+
+}
+
+
+
+.customer-data{
+    padding: 10px 0 6px 0;
+}
+
+ .customer-data h2{
+   font-size: 1.8rem;
+   text-transform: capitalize;
+   font-weight: 600;
+   color: var(--blue1);
+   text-align: center;
+}
+
+.customer-data p{
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: var(--light);
+}
+
+
+
+.testimonial-part h3 {
+    text-align: center;
+    font-size: 1.7rem;
+    font-weight: 600;
+    color: var(--blue1);
+    padding: 14px 18px 8px 18px;
+}
+
+.testi-content {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--light1);
+    text-wrap: wrap;
+    text-align: justify;
+    padding: 0 17px !important;
+    
+      
+}
+.T-btn{
+    color: var(--background1);
+    font-size: 14px;
+    font-weight: 400;
+    transition: .5s linear;
+    background: transparent;
+    cursor: pointer;
+    margin: 0 18px 8px 18px;
+    outline: none !important;
+}
+
+.T-btn:hover{
+    color:var(--blue1);
+
+}

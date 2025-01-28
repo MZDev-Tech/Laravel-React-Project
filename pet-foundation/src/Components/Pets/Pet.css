@@ -1,0 +1,126 @@
+
+:root {
+    --background:rgb(24, 24, 71);
+    --nav-bg:rgb(20, 20, 97);
+    --blue:rgb(7, 224, 240);
+    --skin:#c0ab75;
+    --light:#5f5f5f;
+    --lightdark:#525151;
+    --shadow: 2px 2px 12px rgba(0, 0, 0, 0.15);
+
+}
+.pets-cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(260px,1fr));
+    gap:20px;
+    padding-right: 4%;
+    padding-left: 4%;
+    
+  
+}
+
+.pet-card1{
+    max-width: 420px;
+    width: 100%;
+    margin-bottom: 25px;
+    background-color: #fff;
+    box-shadow: var(--shadow);
+    padding: 10px 10px 14px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    border: 1px solid #c1b08657;
+    transition: transform .5s ease;
+
+}
+
+.pet-card1:hover{
+    transform: scale(1.03);
+}
+
+.pet-card1 img{
+    width: 100%;
+    height:230px; 
+ 
+}
+.pet-card1 img:hover{
+    filter:grayscale(100%);
+}
+
+.pet-content{
+    padding:10px 0 0 5px;
+}
+
+.pet-content h3{
+    color: var(--background);
+    font-size: 19px;
+    font-weight: 600;
+    text-transform: capitalize;
+    padding-top: 5px;
+    text-align: start;
+    padding-left: 0;
+
+
+}
+
+.pet-content .pet-data{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.pet-content .pet-data p{
+    font-size: 14px;
+    color: var(--light);
+    font-weight: 300;
+    padding: 4px 0;
+}
+
+.pet-content .pet-data p span{
+    font-weight: 500;
+    margin-left: 6px; 
+    color: var(--lightdark); 
+}
+
+
+ p{
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--background);
+}
+
+
+
+
+.pet-all-btn{
+    cursor: pointer;
+    padding: 12px 32px;
+    background: #c4b388;
+    border:2px solid var(--skin);
+    color: #fff;
+    border-radius: 50px;
+    transition: all .3s ease;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    outline:none !important;
+    margin: 6px auto 32px auto;
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+
+
+.pet-all-btn:hover{
+    background: transparent;
+    color:var(--background);
+
+}
+
+.btn-icon{
+    margin-left: 6px;
+    font-size: 20px !important;
+}
+

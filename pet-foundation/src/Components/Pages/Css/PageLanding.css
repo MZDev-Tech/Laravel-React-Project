@@ -1,0 +1,111 @@
+.page-banner {
+    background: #e3e3fd !important;
+    background-image: url('../../../Images/hero-static-bg.png') !important;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 280px;
+    position: relative;
+    border-radius: 6px;
+    margin: 10rem 3rem 1.6rem 3rem;
+
+}
+
+.page-banner .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    margin-top: 3rem;
+    margin-left: 8rem;
+}
+
+.page-banner h2 {
+    margin-left: 22rem;
+    color: #023C5A;
+    font-size: 4.4rem;
+    display: block;
+    font-weight: 600;
+    line-height: 1.4;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+    text-align: start;
+}
+
+.page-banner p {
+    margin-left: 22rem;
+
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1.6;
+    text-wrap: wrap;
+    max-width: 420px;
+    text-transform: lowercase;
+    color: #023C5A;
+}
+
+.page-banner p::first-letter {
+    text-transform: uppercase;
+}
+
+.bg-shape {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10 !important;
+
+}
+
+.bg-shape img {
+    width: 250px;
+    height: 280px;
+}
+
+
+@media screen and (max-width:820px) {
+    .bg-shape img {
+        width: 210px;
+        height: 240px;
+    }
+}
+
+@media screen and (max-width:620px) {
+
+    .page-banner {
+        height: 220px;
+
+    }
+   
+    .page-banner .container {
+        align-items: center;
+        margin-left: 0;
+    }
+
+    .page-banner h2 {
+        font-size: 4.6rem;
+        margin-left: 0;
+        font-size: 4.4rem;
+        margin-top: 2rem;
+
+    }
+
+    .page-banner p {
+        display: none;
+    }
+
+    .bg-shape {
+        display: none;
+
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .page-banner {
+        height: 170px;
+    }
+
+    .page-banner h2 {
+        font-size: 4rem;
+    }
+}

@@ -1,0 +1,71 @@
+:root {
+    --hoverColor: rgb(24, 24, 71) !important;
+    --nav: rgb(20, 20, 97) !important;
+    --blue-ad: rgb(7, 224, 240) !important;
+    --shadow: 2px 2px 12px rgba(0, 0, 0, 0.15);
+
+}
+
+.success-page {
+    display: flex;
+    align-items: center !important;
+    justify-content: center;
+    margin-top: 5rem;
+    
+
+}
+
+.success-page .success-data {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5rem 3rem;
+    min-width: 50%;
+    max-width: 90%;
+    background-color: #fff;
+
+}
+
+.success-page .success-data h2{
+    font-size: 2.8rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    padding: 10px 0;
+}
+
+.success-page .success-data p{
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    font-weight: 400;
+    color: rgb(85, 85, 85);
+    text-align: center;
+}
+
+.success-page .success-data p.thank-mesg{
+    font-size: 1.7rem;
+    color: rgb(37, 37, 37);
+}
+
+.success-page .btn-back{
+padding: 8px 18px;
+border-radius: 6px;
+font-size: 1.6rem;
+text-transform: capitalize;
+}
+
+@media screen and (max-width:420px){
+    .success-page .success-data h2{
+        font-size: 2rem;
+    }
+
+    .success-page .success-data p{
+        font-size: 1.4rem;
+    }
+    
+    .success-page .success-data p.thank-mesg{
+        font-size: 1.6rem;
+
+    }
+    
+}

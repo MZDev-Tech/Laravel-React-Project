@@ -1,0 +1,47 @@
+:root {
+    --bgAbout: rgb(24, 24, 71);
+    --bg2About: rgb(20, 20, 97);
+    --mainAbout: rgb(4, 160, 165);
+    --shadow: 2px 2px 12px rgba(0, 0, 0, 0.15);
+    --colAbout: #e3e3fd;
+
+}
+
+.video-area{
+    margin-top: 20px;
+    background-color: #fdfcf5ec;
+    margin-bottom: -6%;
+   
+
+}
+.about-video-right {
+    background: url('../../../Images/dogs/dog-bg1.jpg') no-repeat center;
+    background-size: cover;
+    height: 330px;
+}
+.about-video-right .overlay-bg {
+    background: #000;
+}
+.about-video-right .play-btn {
+    z-index: 2;
+}
+.paly-btnIcon{
+    font-size: 4.4rem;
+    color: #fff;
+}
+.description h4 {
+    margin-top: 30px;
+    margin-bottom: 12px;
+    font-size: 2rem;
+    color: var(--bgAbout);
+    font-weight: 600;
+    text-align: center;
+    text-transform: capitalize;
+}
+.description p{
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #302f2fbe;
+    text-align-last: center;
+    padding: 0 8px 28px 12px;
+}

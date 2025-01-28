@@ -1,0 +1,432 @@
+:root {
+    --backgroundD: rgb(8, 20, 73);
+    --backgroundD2: rgb(7, 8, 73);
+    --backgroundTT: rgb(24, 24, 71);
+
+    --blue: rgb(7, 100, 107);
+    --skinD: #8a7c59;
+    --light: #5f5f5f;
+    --lightparah: #3b3b3ba8;
+    --light2: #5f5f5f9d;
+    --lightdark: #525151d5;
+
+}
+
+.sec {
+    margin-top: 70px;
+    padding-left: 4%;
+    padding-right: 4%;
+}
+
+/* pet details section start here */
+
+.details-sec {
+    padding: 5rem 2.2rem;
+    border: 1px solid #86868630;
+    border-radius: 8px;
+    margin-bottom: 36px !important;
+}
+
+
+.pet-details {
+    display: flex;
+    gap: 20px;
+}
+
+.part-left,
+.detail-part-right {
+    width: 50%;
+
+}
+
+.part-left,
+.detail-part-right {
+    background: #fff;
+    padding: 20px 26px;
+    border-radius: 12px;
+}
+
+.part-left img {
+    width: 100%;
+    height: 580px;
+    border-radius: 2px;
+}
+
+.top-heading {
+    display: flex;
+    padding-right: 70px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.top-heading span {
+    margin-right: 6px;
+}
+
+.top-heading span .loc-icon {
+    font-size: 2rem !important;
+    color: var(--blue);
+}
+
+.top-heading h4 {
+    color: #292828a8;
+    ;
+    font-size: 1.6rem;
+    font-weight: 500;
+
+}
+
+.detail-part-right h2 {
+    color: var(--backgroundD);
+    font-size: 2.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 0;
+
+}
+
+.detail-part-right h3 {
+    color: rgb(12, 56, 97);
+    font-size: 2.3rem;
+    font-weight: 500;
+    margin: 4px 0;
+
+}
+
+.detail-btns {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 18px 0;
+
+}
+
+.detail-btns .d-btn {
+    padding: 11px 32px;
+    border-radius: 50px;
+    border: 2px solid var(--backgroundD);
+    background: var(--backgroundD);
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: capitalize;
+    cursor: pointer;
+    transition: all .5s ease;
+}
+
+.detail-btns .btn1:hover {
+    background: rgba(6, 22, 97, 0.945);
+
+}
+
+.detail-btns .btn2 {
+    background: transparent;
+    color: var(--skinD);
+    border: 2px solid var(--skinD);
+
+}
+
+.detail-btns .btn2:hover {
+    background: var(--skinD);
+    color: #fff;
+}
+
+
+ul.data-pet {
+    margin: 10px 0;
+}
+
+.data-pet li.line1 {
+    border-bottom: 1px solid #7977771e;
+    padding: 10px 0;
+    text-transform: capitalize;
+    display: flex;
+    align-items: center;
+}
+
+.data-pet li.line1 p.parah1 {
+    font-size: 15px;
+    font-weight: 400;
+    width: 36% !important;
+    margin: 0;
+    white-space: nowrap;
+    color: var(--light);
+
+}
+
+.data-pet .line1 p.parah2 {
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--lightparah);
+    text-wrap: wrap;
+
+}
+
+/* Pets detail paragarph start here*/
+
+.details-sec div.detail-parah {
+    padding: 12px 0;
+    background: #fff;
+    border-radius: 12px;
+    margin-top: 20px;
+    padding: 36px 30px;
+
+}
+
+.details-sec div.detail-parah h4 {
+    margin: 8px 0 10px 0;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--backgroundD);
+}
+
+.details-sec div.detail-parah p.parah-data {
+    color: var(--lightparah);
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-transform: lowercase;
+}
+
+.details-sec p.parah-data::first-letter {
+    text-transform: uppercase;
+}
+
+/* On pet image side down box start here */
+
+.part-left .image-downPart {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #dbc58e91;
+    border: 1px solid #ccb8849f;
+    padding: 6px 8px;
+    margin-top: 26px;
+    border-radius: 4px;
+}
+
+.part-left .image-downPart .downPart1 {
+    display: flex;
+    align-items: center;
+}
+
+.part-left .image-downPart .downPart1 img {
+    width: 50px;
+    height: 50px;
+    margin-right: 4px;
+}
+
+.part-left .image-downPart .downPart1 p {
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: var(--backgroundD);
+    margin: 0;
+}
+
+/* Related Pets start here */
+.part2-related {
+    margin-top: 80px;
+}
+
+.related-products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+    padding-right: 5%;
+    padding-left: 5%;
+    margin-top: 50px;
+
+
+}
+
+.related-products-list {
+    width: 100%;
+    max-width: 480px;
+    margin-bottom: 25px;
+    background-color: #fff;
+    box-shadow: var(--shadow);
+    padding: 10px 10px 15px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    border: 1px solid #c1b08657;
+    transition: transform .5s ease;
+
+}
+
+.related-products-list:hover {
+    transform: scale(1.03);
+}
+
+.related-products-list img {
+    width: 100%;
+    height: 230px;
+
+}
+
+
+.related-pet-data {
+    padding: 10px 0 0 5px;
+}
+
+.related-products-list h3 {
+    color: var(--background);
+    font-size: 19px;
+    font-weight: 600;
+    text-transform: capitalize;
+    text-align: start;
+    margin: 0;
+    padding: 8px 0 0 10px;
+
+}
+
+
+.related-pet-data {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.related-pet-data p {
+    font-size: 14px;
+    color: var(--light);
+    font-weight: 300;
+    padding-bottom: 8px;
+    padding-left: 8px;
+
+}
+
+.related-pet-data p span {
+    font-weight: 500;
+    margin-left: 6px;
+    color: #525151a6;
+    ;
+}
+
+
+
+
+.related-products-list .price {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--backgroundTT);
+    padding-left: 8px;
+
+}
+
+/* media queries for smal screen */
+@media screen and (max-width:1100px) {
+
+    .part-left,
+    .detail-part-right {
+        width: 100%;
+    }
+
+    .part-left {
+        margin-right: 0;
+    }
+
+    .pet-details {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .part-left img {
+        width: 100%;
+        height: 520px;
+        border-radius: 2px;
+    }
+}
+
+
+@media screen and (max-width:768px) {
+    .sec {
+        margin-top: 30px;
+
+    }
+
+    .details-sec {
+        padding: 2.2rem 1.2rem;
+        border: 1px solid #86868630;
+        border-radius: 8px;
+        margin-bottom: 20px !important;
+    }
+
+    .part-left img {
+        width: 100%;
+        height: 420px;
+        border-radius: 2px;
+
+    }
+
+    .image-downPart {
+        padding: 6px;
+    }
+
+    .part2-related {
+        margin-top: 40px;
+    }
+
+}
+
+@media screen and (max-width:420px) {
+    .details-sec {
+        padding: 2rem .8rem;
+
+    }
+
+    .part-left {
+        padding: 8px !important;
+    }
+
+    .part-left img {
+
+        height: 350px;
+    }
+
+    .part-left .image-downPart {
+
+        padding: 6px 4px !important;
+        margin: 10px 0 !important;
+    }
+
+    .part2-related {
+        margin-top: 40px;
+    }
+
+    .part-left .image-downPart .downPart1 img {
+        width: 35px;
+        height: 35px;
+        margin-right: 3px;
+    }
+
+    .part-left .image-downPart .downPart1 p {
+        font-size: 1.2rem;
+    }
+
+    .detail-part-right h2 {
+        font-size: 2.4rem;
+    }
+
+    .top-heading {
+
+        padding-right: 0;
+
+    }
+
+    .detail-btns .d-btn {
+        font-size: 10px !important;
+    }
+
+
+    .detail-btns .d-btn {
+        padding: 10px 16px;
+    }
+
+    .data-pet li.line1 p.parah1 {
+        font-size: 14px;
+        width: 40% !important;
+    }
+    
+    .data-pet .line1 p.parah2 {
+        font-size: 15px;
+    }
+}

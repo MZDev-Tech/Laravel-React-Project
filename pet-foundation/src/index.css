@@ -1,0 +1,98 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Outfit", sans-serif;
+    outline: none; border: none;
+
+}
+.toastBody{
+    font-size: 14px;
+  }
+
+html{
+    font-size: 62.5%;
+    scroll-padding-top: 8rem;
+    scroll-behavior: smooth;
+}
+li{
+    list-style-type: none;
+}
+body{
+    background:#f5f5f5 ;
+    overflow-x: hidden !important;
+}
+
+body::-webkit-scrollbar {
+    width: 8px;
+}
+
+body::-webkit-scrollbar-track {
+    background: #fdfdfd;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #cacaca;
+    border-radius: 5px;
+
+
+}
+a{
+    text-decoration: none !important;
+    cursor: pointer;
+    line-height: 1;
+    color: inherit !important;
+}
+.sec-container{
+    padding-right: 8%;
+    padding-left: 8%;
+}
+
+section{
+    padding: 40px 0;
+}
+/* input[type="password"]{
+    -webkit-appearance: none !important;
+    -moz-appearance: none !important;
+    appearance: none !important;
+} */
+input[type="password"] {
+    -webkit-appearance: none !important; 
+    -moz-appearance: none !important;    
+    appearance: none !important;         
+    background: transparent !important;  
+  }
+  ::-ms-reveal {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    html {
+        font-size: 52.5%;
+    }
+
+    .sec-container{
+        padding-right: 4%;
+        padding-left: 4%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    html {
+        font-size: 42.5%;
+    }
+
+    section{
+        padding: 30px 0;
+    }
+
+    .sec-container{
+        padding-right: 3%;
+        padding-left: 3%;
+    }
+
+    
+}

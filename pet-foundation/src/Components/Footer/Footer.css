@@ -1,0 +1,220 @@
+:root {
+    --bg: rgb(11, 11, 39);
+    --bg2: rgb(20, 20, 97);
+    --main1: rgb(4, 160, 165);
+    --shadow: 2px 2px 12px rgba(0, 0, 0, 0.15);
+
+}
+
+
+
+footer {
+   
+    margin-top: 90px;
+    position: absolute;
+    z-index: 888 !important;
+    width: 100% !important;
+ 
+}
+.footer-downPart{
+    padding: 60px 50px 35px 50px;
+    background-color: #d9e2e2;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+
+footer .Footer_column {
+    padding-bottom: 10px !important;
+}
+
+.footer-parah {
+    max-width: 340px;
+    text-wrap: wrap;
+    font-size: 1.4rem !important;
+    font-weight: 300;
+    color: #000000ec;
+}
+
+footer .Footer_column ul.contact-menu {
+    display: flex;
+    gap: 18px;
+    padding-top: 25px;
+}
+
+footer .Footer_column ul.contact-menu li {
+    gap: 6px;
+    display: flex;
+    align-items: center;
+    color: #3a3a3aee;
+    transition: all .3s ease;
+}
+
+footer .Footer_column ul.contact-menu li:hover {
+    color: #181818;
+}
+
+footer .Footer_column ul.contact-menu .contact-icon {
+    font-size: 1.8rem !important;
+}
+
+footer .Footer_column ul.contact-menu span {
+    font-size: 1.4rem;
+    font-weight: 300;
+}
+
+footer .Footer_column h4 {
+    color: #000000da;
+    font-weight: 600;
+    font-size: 1.8rem;
+    padding-bottom: 20px;
+}
+
+footer .Footer_column li {
+    list-style-type: none;
+    color: #3a3a3aee;
+    font-size: 1.4rem;
+    font-weight: 400;
+    padding-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    text-transform: capitalize;
+    transition: all .5s ease;
+    cursor: pointer;
+}
+
+footer .Footer_column li:hover {
+    color: #272727f5;
+    font-size: 1.5rem;
+
+}
+
+footer .Footer_column li .li-tick {
+    font-size: 1.8rem;
+}
+
+/* social Link start here */
+footer .Footer_column .social-links {
+    padding-bottom: 16px;
+    display: flex;
+    gap: 14px;
+}
+
+footer .Footer_column .social-links .social-icon {
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+}
+
+footer .Footer_column h6 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color:#1b1b1bd0;
+    padding: 15px 0;
+    text-wrap: wrap;
+}
+
+footer .Footer_column button {
+    background-color: #D3DBE8;
+    width: 100%;
+    margin-top: 6px;
+    max-width: 250px;
+    padding: 12px;
+    border: 1px solid #ced8e9;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+
+}
+
+.Footerbtn-icon {
+    color: #1F5F8F;
+    font-size: 1.8rem;
+}
+
+footer .Footer_column button span {
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 120%;
+    color: #1F5F8F;
+}
+
+/* copyright start here */
+.copyright {
+
+    padding: 40px 0;
+    position: relative;
+    background-color: #d5e2e2;;
+    text-transform: lowercase;
+}
+
+.copyright h6::first-letter {
+    text-transform: capitalize;
+}
+
+
+div .copyright h6 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #000000ce;
+    text-wrap: wrap;
+    word-spacing: 2px;
+}
+
+
+@media screen and (max-width:820px) {
+    .footer-parah {
+        max-width: 290px;
+
+    }
+    .footer-downPart {
+        padding: 60px 40px 30px 40px;
+    }
+}
+
+@media screen and (max-width:320px){
+    .footer-downPart {
+        padding: 60px 20px 40px 20px !important;
+       
+    }
+
+    .detail-btns .d-btn {
+   font-size: 12px;
+    }
+
+    footer .Footer_column ul.contact-menu {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6px;
+        padding-top: 25px;
+    }
+    footer .Footer_column .social-links {
+        padding-bottom: 16px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6px;
+    }
+    div .copyright h6 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform:none;
+        font-size: 1.2rem;
+        font-weight: 300;
+        padding-left: 8px;
+        word-spacing: 0;
+    }
+    .details-sec div.detail-parah {
+      
+        padding: 20px 16px;
+    }
+}

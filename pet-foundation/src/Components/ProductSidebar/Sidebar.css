@@ -1,0 +1,239 @@
+:root {
+    --bg-color: rgb(24, 24, 71);
+    --bg2: rgb(20, 20, 97);
+    --main-blue: rgb(4, 160, 165);
+    --shadow: 2px 2px 12px rgba(0, 0, 0, 0.15);
+
+}
+
+
+.sidebar {
+    width: 17%;
+    height: 100%;
+    padding: 5px;
+    padding-bottom: 15%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #e9edf25b;
+    border-right: 2px solid #dee2e8 !important;
+    overflow-y: scroll;
+    position: fixed;
+    left:0;
+    z-index: 100;
+
+}
+
+.sidebar::-webkit-scrollbar {
+    width: 8px;
+}
+
+.sidebar::-webkit-scrollbar-track {
+    background: #e9edf25b;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+    background-color: #fff;
+    border-radius: 5px;
+
+
+}
+
+.side-Title {
+    font-size: 2.2rem;
+    font-weight: 500;
+    color: #535151ce;
+    padding: 6px 8px 16px 2px;
+
+
+}
+
+.sidebar-subtitle {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--bg-color);
+    margin-bottom: 16px;
+    text-align: left;
+    padding-left: 6px;
+    border-bottom: 1px solid #c4c4c434;
+
+
+}
+
+.sidebar-part1 {
+    margin-bottom: 14px;
+}
+
+.sidebar-radio-container {
+    margin-bottom: 12px;
+    padding-left: 35px;
+    display: block;
+    position: relative;
+    cursor: pointer;
+    font-size: 14px;
+    font-family: 400;
+    color: #272727c2;
+
+
+}
+
+.sidebar-radio-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+
+}
+
+.sidebar-radio-container .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #ffffff;
+    border: 1px solid #d6d4d4;
+    border-radius: 50%;
+}
+
+.sidebar-radio-container:hover input~.checkmark {
+    background-color: #ccc;
+}
+
+.sidebar-radio-container input:checked~.checkmark {
+    background-color: #2196f3;
+}
+
+.checkmark::after {
+    content: '';
+    position: absolute;
+    display: none;
+
+}
+
+.sidebar-radio-container input:checked~.checkmark::after {
+    display: block;
+
+}
+
+.sidebar-radio-container .checkmark::after {
+    top: 6.4px;
+    left: 6.4px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #fff;
+}
+
+
+.search-price {
+    position: relative;
+    margin-bottom: 14px;
+}
+
+.search-price input {
+    padding: 8px;
+    width: 100%;
+    border: 1px solid #979595c7;
+    ;
+    border-radius: 6px;
+    transition: all .5s ease;
+    color: #818181b0;
+    font-size: 14px;
+
+
+}
+
+.search-price input::placeholder {
+    font-size: 14px;
+    color: #8181819f;
+    text-align: left;
+}
+
+.search-price .filterBtn {
+
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background-color: #d8d5d5c7;
+    cursor: pointer;
+    transition: all .5s ease;
+
+}
+
+
+.search-price input:focus {
+    outline: none;
+    border-color: var(--main-blue);
+}
+
+.search-price input:focus+.filterBtn,
+.search-price .filterBtn:focus {
+    background-color: var(--main-blue);
+}
+
+
+.recommended-part {
+    margin: 18px 0 28px 0;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+.recommended-part h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--bg-color);
+    margin-bottom: 16px;
+    text-align: left;
+}
+
+.recommended-part button {
+    font-size: 1.5rem;
+    color: #4d4c4c70;
+    border: 1px solid #7e7d7d7e;
+    padding: 6px 14px;
+    text-transform: capitalize;
+    margin-right: 10px;
+    background: transparent;
+    transition: all .5s ease;
+}
+
+.recommended-part button:hover {
+    color: #fff;
+    background: rgb(27, 27, 27);
+    border: 1px solid #fff;
+}
+
+
+@media screen and (max-width:990px) {
+    .sidebar {
+        width: 220px;
+        z-index: 888;
+        background: #e7eff9;
+        border-right: 2px solid #dee2e8 !important;
+       box-shadow: var(--shadow);
+        left:-110%;
+        color: #fff;
+        transition: left 1s ease;
+    }
+    
+    .sidebar.active{
+        left:0;
+      
+    }
+}
+
+@media screen and (max-width:420px){
+    .recommended-part button {
+        padding: 6px 12px;
+        margin-right: 6px;
+    }
+   
+}

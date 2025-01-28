@@ -1,0 +1,244 @@
+:root {
+  --BG: rgb(24, 24, 71);
+  --bg3: rgb(17, 17, 58);
+  --main-sky: rgba(23, 162, 167, 0.719);
+  --shadow: 2px 2px 12px rgba(0, 0, 0, 0.15);
+  --skin1: #c1b086;
+  --light1: #494949;
+
+}
+/* page Background for regsiter and login */
+
+.modal-background {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 1000;
+  justify-content: center;
+  align-items: center;
+}
+/* Register form start here */
+
+.register-form {
+  position: relative;
+  background: #fff;
+  display: flex;
+  width: 900px;
+  max-width: 90%;
+  max-height: 80%;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.modal-part1,.register-content{
+  width: 50%;
+}
+.modal-part1 {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden !important;
+  color: #fff;
+  border-right: none;
+}
+
+.registerModal-data{
+  position: relative;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 120px;
+  align-items: center;
+  background-color: var(--main-sky);
+  border-radius: 0% 100% 100% 0% / 0% 0% 100% 100%;
+}
+.modal-part1 .registerBg {
+  position: absolute;
+  top: 40%;
+  left: 12%;
+  width: 315px;
+  height: 290px;
+}
+
+.modal-part1 h2 {
+  font-size: 2.6rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+.modal-part1 p {
+  margin-top: 8px;
+  width: 360px;
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #fff;
+  text-align-last: center;
+
+}
+
+/* Login Part Start here */
+
+.modal-content {
+  width:450px;
+  padding: 60px 50px;
+  position: relative;
+  border: none !important;
+}
+
+/* Login $ Register input fields design */
+
+.modal-content h2 {
+  margin: 12px 0 16px 0;
+  font-size: 2.4rem;
+  color: var(--BG);
+  font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.close-button {
+  position: absolute;
+  top: 18px;
+  right: 16px;
+  cursor: pointer;
+  font-size: 3rem !important;
+  color: var(--BG);
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  background: #b1b0b03d;
+  border-radius: 50px;
+  transition: .5s ease;
+}
+
+.close-button:hover {
+  color: var(--main-sky);
+}
+
+.show {
+  display: flex;
+}
+
+.Input-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 20px;
+}
+.field1 {
+  display: flex;
+  align-items: center;
+  position: relative;
+
+}
+form div.password-wrapper1 {
+  position: relative;
+  flex:1;
+  
+}
+
+ form span.password-toggle {
+  position: absolute;
+  right: 10px;
+  top: 1rem;
+  
+}
+
+ form span.password-toggle .eye-icon {
+  font-size: 1.8rem !important;
+  cursor: pointer;
+}
+
+.modal-content form input {
+  padding: 10px 0;
+  width: 100%;
+  border: 1px solid #c9c9c9;
+  
+  font-size: 1.5rem;
+  background-color: #f7f6f6;
+  margin-bottom: 10px;
+  transition: .5s ease;
+  padding-left: 8px;
+}
+.modal-content form input::placeholder{
+  color: #5c5c5c73 !important;
+}
+.modal-content form input:hover {
+  padding-left: 16px;
+}
+
+
+
+.form-icon {
+  width: 46px;
+  height: 46px;
+  line-height: 46px;
+  text-align: center;
+  background-color: rgb(229, 231, 231);
+  border-bottom: 1px solid #dee2e8;
+  margin-right: 10px;
+
+}
+
+.icon1 {
+  font-size: 2rem !important;
+  color: var(--BG);
+}
+
+.modal-content form button {
+  padding: 10px;
+  background: var(--main-sky);
+  color: white;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 18px;
+  margin-bottom: 12px;
+  border-radius: 25px;
+  font-size: 18px;
+  color: #fff;
+  transition: .5s ease;
+
+}
+
+.modal-content form button:hover {
+  border-radius: 0;
+  background: rgba(10, 130, 134, 0.877);
+}
+
+
+.modal-content p {
+  margin-top: 14px;
+  padding-bottom: 6px;
+  font-size: 1.4rem;
+  color: var(--light1);
+  transition: .5s ease;
+}
+
+.modal-content p span {
+  margin-left: 6px;
+  color: rgba(10, 130, 134, 0.677);
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 1.6rem;
+}
+
+/* media query to hide part1 of register form in small screens */
+
+@media screen and (max-width:880px){
+  .register-form { 
+    width: 600px;
+    max-width: 90%;
+  }
+  .modal-part1 {
+   display: none;
+}
+.register-content{
+  width: 100%;
+}
+}

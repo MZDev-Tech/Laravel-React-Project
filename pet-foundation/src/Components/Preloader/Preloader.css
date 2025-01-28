@@ -1,0 +1,17 @@
+:root {
+    --bgPre: rgb(11, 11, 39);
+    --bgPre2: rgb(20, 20, 97);
+    --mainPre: rgb(4, 160, 165);
+    --shadow: 2px 2px 12px rgba(0, 0, 0, 0.15);
+
+}
+
+.preloader{
+    background: #fff url('../../Images/pregif.gif') no-repeat center center;
+    background-size:20%;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 1200 !important;
+
+}

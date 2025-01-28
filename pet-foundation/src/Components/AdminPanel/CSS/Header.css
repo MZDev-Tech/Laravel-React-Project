@@ -1,0 +1,131 @@
+:root {
+    --bgAdmin:rgb(24, 24, 71) !important;
+    --nav:rgb(20, 20, 97) !important;
+    --blue-ad:rgb(7, 224, 240) !important;
+      --shadow: 2px 2px 12px rgba(0, 0, 0, 0.15);
+
+}
+
+.header-sec{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 4%;
+    padding-right: 4%;
+    width: 100%;
+    height: 75px;
+    position: fixed;
+    top: 0;
+    background-color: #fff;
+    box-shadow: var(--shadow);
+    border-bottom: 1px solid var(--nav);
+    z-index: 999 !important;
+
+}
+
+.header-sec .admin-logo{
+    font-size: 2.2rem;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:5px;
+    color: var(--nav);
+}
+
+.header-sec .admin-logo .head-icon{
+font-size: 3rem;
+color: var(--nav);
+}
+
+.header-sec .admin-logo span{
+    color:var(--blue-ad);
+}
+.header-leftpart{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.header-leftpart .menu-icon{
+ cursor: pointer;
+ font-size: 2.2rem;
+ color: var(--nav);
+ display: none;
+}
+.header-sec .admin{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:4px;
+    position: relative;
+}
+.header-sec .admin img{
+    width: 50px;
+    height:50px;
+    border-radius: 50%;
+}
+.profile-data h2{
+    font-size: 1.4rem;
+    font-weight:600;
+    color: var(--nav);
+    margin: 0;
+}
+.header-sec .admin .admin-icon{
+font-size: 2.6rem;
+color: var(--nav);
+cursor: pointer;
+}
+
+/* admin profile dropdown style */
+.admin .dropdown {
+    position: absolute;
+    top: 120%;
+    left: 0;
+    background-color: #fff; 
+    box-shadow: var(--shadow); 
+    z-index: 10;
+    padding: 10px 0 15px 0;
+    border-radius: 10px;
+    width: 160px;
+    display: none;
+  }
+  
+  .admin .dropdown-link {
+    margin-top: 10px;
+    padding: 0 15px ;
+    text-align: left;
+    display: block;
+    color: var(--background); 
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    text-transform: capitalize;
+   
+
+  }
+ 
+  .admin .dropdown-link:hover {
+   color: var(--blue); 
+   cursor: pointer;
+  }
+  
+  /* Show dropdown on when click */
+  .admin .dropdown.visible {
+    display: block;
+  }
+@media screen and  (max-width:820px){
+    .header-leftpart .menu-icon{
+        display: block;
+    }
+}
+@media screen and (max-width:480px){
+    .profile-data{
+        display:none !important;
+    }
+    .admin .dropdown {
+        left: -40px;
+        width:120px;
+       
+    }
+}

@@ -1,0 +1,37 @@
+:root {
+    --background:rgb(24, 24, 71);
+    --blue:rgb(14, 226, 241);
+    --skin:#c1b086;
+    --light:#5f5f5f;
+    --title:#212ea0;
+    --heading:#000f38;
+
+}
+
+.title {
+    text-align: center;
+    color: var(--title);
+    font-size: 1.7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 12px 0 16px 0;
+   
+}
+
+.title h2{
+    font-size: 3.2rem;
+    color: var(--heading);
+    margin-top: 4px;
+   text-transform: capitalize;
+}
+
+@media screen and (max-width:540px){
+    .title p{
+
+        font-size: 1.5rem;
+       
+    }
+    .title h2{
+        font-size: 2.2rem;  
+    } 
+}
